@@ -1,7 +1,7 @@
 <h1 align="center">Hi there 👋</h1>
 
 <p align="center">
-  <a href="https://github.com/ChiaraJS/ChiaraJS/blob/master/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/ChiaraJS/ChiaraJS?color=blue&label=License&logo=github"></a>
+  
   <img alt="Gitter" src="https://img.shields.io/gitter/room/ChiaraJS/ChiaraJS?color=orange&label=Chat&logo=gitter">
   <img alt="GitHub" src="https://img.shields.io/static/v1?color=blue&label=Donate&message=PayPal&logo=paypal">
 </p>
