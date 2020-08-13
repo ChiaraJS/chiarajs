@@ -1,0 +1,7 @@
+
+Technologies used 🛠️
+
+ionicons
+ScrollReveal.js - JavaScript library
+Tilt.js - JavaScript tiny parallax library
+Popper.js - JavaScript popover library
