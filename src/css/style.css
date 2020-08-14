@@ -1,0 +1,122 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+}
+
+.jumbotron {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    min-height: 100vh;
+    height: 100vh;
+    margin-bottom: 0;
+    padding: 0rem 5.6rem;
+    background: #fff;
+    border-bottom: 0px;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5em;
+    text-shadow: 2px 2px #ffb52b;
+}
+
+#hello {
+    font-size: 1em;
+    color: #222;
+    -webkit-transition: -webkit-transform 0.5s;
+    /* Safari */
+    transition: transform 0.5s;
+}
+
+#hello:HOVER {
+    -webkit-transform: rotate(35deg);
+    /* Safari */
+    transform: rotate(35deg);
+}
+
+#name {
+    color: #ffb52b;
+    text-shadow: 2px 2px #222;
+}
+
+p {
+    font-family: 'lato';
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+#game-section {
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    padding: 0rem 5.6rem;
+    align-items: center;
+}
+
+/* Buttons */
+.button {
+	position: relative;
+	display: inline-block;
+    cursor: pointer;
+    margin-bottom: 30px;
+	padding: 10px 20px;
+	background: none;
+	outline: none;
+    border: 3px solid #ffb52b;
+    border-radius: 5px;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+} 
+.button:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.btn-effect {
+	overflow: hidden;
+} 
+.btn-effect:after {
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 0;
+	background: #ffb52b;
+	opacity: 0;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+} 
+.btn-effect:hover,
+.btn-effect:active {
+    color: #fff;
+    outline: none;
+} 
+.btn-effect:hover:after {
+	height: 260%;
+	opacity: 1;
+} 
+.btn-effect:active:after {
+	height: 400%;
+	opacity: 1;
+}
