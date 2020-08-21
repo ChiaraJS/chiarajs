@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>15 Puzzle</title>
+    <meta name="description" content="Move numbers in grid to order them from 1 to 15!">
+    <meta name="author" content="Chiara Papagni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/15PuzzleGame.css">
+</head>
+
+<body>
+    <header>
+        <h1>15 Puzzle</h1>
+    </header>
+
+    <div id="box">
+        <div id="grid"></div>
+        <div id="shuffle">
+            <ion-icon name="play" id="play"></ion-icon>
+        </div>
+    </div>
+
+    <audio id="sound"><source src="../assets/winner.wav"></audio>
+
+    <div class="modal">
+        <div id="modal-box">
+            <h2>Congratulations!</h2>
+            <p>
+                You completed the game in
+                <span class="moves"></span>
+                moves and
+                <span class="hours"></span>
+                <span class="mins"></span>
+                <span class="seconds"></span>.
+            </p>
+            <br>
+            <button class="play-again">Play again</button>
+            <br>
+        </div>
+    </div>
+
+    <!-- Import from /lib and /js -->
+    <script src="../lib/jquery-2.1.1.min.js"></script>
+    <script src="../lib/jquery.touchSwipe.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="../js/15PuzzleGame.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

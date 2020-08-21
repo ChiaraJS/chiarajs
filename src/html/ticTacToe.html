@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>TicTacToe</title>
+    <meta name="author" content="Chiara Papagni">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/ticTacToe.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Tic Tac Toe</h1>
+    </div>
+
+    <table id="board">
+        <tbody>
+            <tr><!--Grazie al campo data posso immettere dei dati nell'html-->
+                <td id="cell-1" data-num="1"></td>
+                <td id="cell-2" data-num="2"></td>
+                <td id="cell-3" data-num="3"></td>
+            </tr>
+            <tr>
+                <td id="cell-4" data-num="4"></td>
+                <td id="cell-5" data-num="5"></td>
+                <td id="cell-6" data-num="6"></td>
+            </tr>
+            <tr>
+                <td id="cell-7" data-num="7"></td>
+                <td id="cell-8" data-num="8"></td>
+                <td id="cell-9" data-num="9"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="timer">
+        <p id="timer"></p>
+    </div>
+
+    <div id="button-group">
+        <button id="reload">Restart</button>
+    </div>
+
+    <div class="modal">
+        <div id="modal-box">
+            <span class="close-modal">&times;</span>
+            <br>
+            <h2>
+                <p id="message"></p>
+            </h2>
+            <p id="p">
+                <span id="moves"></span>
+                <span id="end-time"></span>
+            </p>
+            <br>
+            <div id="button-group">
+                <button id="restart">Restart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Import from /lib and /js -->
+    <script src="../lib/jquery-2.1.1.min.js"></script>
+    <script src="../lib/jquery.touchSwipe.min.js"></script>
+    <script src="../lib/fastclick.js"></script>
+    <script src="../js/ticTacToeGame.js"></script>
+</body>
+
+</html>
