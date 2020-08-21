@@ -18,23 +18,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- #TODO: favicon -->
     <!-- <link rel="shortcut icon" type="image/png" href="assets/favicon.png" /> -->
+
     <!-- Bootstrap library -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- ScrollReveal library -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.7/scrollreveal.min.js"
+        integrity="sha512-yrp2XCY0JvwOgu87K/vTN3IIHolfAJL3SMsFu0ujdKeWWMmFhClABdlxna2TfOhMqX49GbmsIpbZ6fVBE7gleQ=="
+        crossorigin="anonymous"></script>
     <script>
         ScrollReveal({ reset: false });
     </script>
     <!-- Ionicons library -->
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-
-    <link rel="stylesheet" href="src/css/style.css">
+    <!-- Style sheet import from css folder -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <!-- TOP -->
+    <div id="top"></div>
+
     <div class="jumbotron">
-        <!-- ScrollReveal -->
         <h1 class="reveal-title">
             Hey there <ion-icon id="hello" name="hand-right-outline"></ion-icon>
             <br>
@@ -43,12 +48,18 @@
     </div>
 
     <!-- Games -->
-    <!-- ScrollReveal -->
-    <div id="game-section" class="reveal-row row">
+    <div id="game-section" class="row">
         <div class="col-lg-4 col-sm-12">
-            <img class="img-fluid" src="src/assets/tictactoe.jpg" />
-            <h3>Tic Tac Toe</h3>
-            <div>
+
+            <div class="img-tilt">
+                <div data-tilt>
+                    <img class="img-fluid" src="assets/tictactoe.jpg" />
+                </div>
+            </div>
+            <!-- <img class="img-fluid" src="assets/tictactoe.jpg" /> -->
+
+            <div class="reveal-text">
+                <h3>Tic Tac Toe</h3>
                 <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Excepturi neque, ipsa animi maiores repellendus distinctio
@@ -56,13 +67,18 @@
                     inventore debitis fuga numquam voluptate ex architecto
                     itaque molestiae.
                 </p>
+                <a href="html/ticTacToe.html"><button type="button" class="button btn-effect">Try the game</button></a>
             </div>
-            <a href="#"><button type="button" class="button btn-effect">Try the game</button></a>
+
         </div>
         <div class="col-lg-4 col-sm-12">
-            <img class="img-fluid" src="src/assets/15game.jpg" />
-            <h3>15 Game</h3>
-            <div>
+            <div class="img-tilt">
+                <div data-tilt>
+                    <img class="img-fluid" src="assets/15game.jpg" />
+                </div>
+            </div>
+            <div class="reveal-text">
+                <h3>15 Game</h3>
                 <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Excepturi neque, ipsa animi maiores repellendus distinctio
@@ -70,13 +86,17 @@
                     inventore debitis fuga numquam voluptate ex architecto
                     itaque molestiae.
                 </p>
+                <a href="html/15PuzzleGame.html"><button type="button" class="button btn-effect">Try the game</button></a>
             </div>
-            <a href="#"><button type="button" class="button btn-effect">Try the game</button></a>
         </div>
         <div class="col-lg-4 col-sm-12">
-            <img class="img-fluid" src="src/assets/15game.jpg" />
-            <h3>Coming soon...</h3>
-            <div>
+            <div class="img-tilt">
+                <div data-tilt>
+                    <img class="img-fluid" src="assets/comingsoon.jpg" />
+                </div>
+            </div>
+            <div class="reveal-text">
+                <h3>Coming soon...</h3>
                 <p class="mb-4">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                     Excepturi neque, ipsa animi maiores repellendus distinctio
@@ -84,19 +104,42 @@
                     inventore debitis fuga numquam voluptate ex architecto
                     itaque molestiae.
                 </p>
+                <a href="#"><button type="button" class="button btn-effect">Try the game</button></a>
             </div>
-            <a href="#"><button type="button" class="button btn-effect">Try the game</button></a>
         </div>
     </div>
 
-    <div id="footer">
-        <p>
+    <!-- Contact -->
+    <div class="contact">
+        <a href="mailto:example@email.com" class="cta">
+            <span>Contact me</span>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#top"><ion-icon class="top" name="chevron-up-outline"></ion-icon></a>
+        <br><br>
+        <p class="social" style="text-align:center">
+            <a href=""><ion-icon name="logo-linkedin"></ion-icon></a>
             <a href="https://github.com/ChiaraJS"><ion-icon name="logo-github"></ion-icon></a>
-            I'm hosted with GitHub Pages.
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+        </p>      
+        <hr>
+        <p class="copyright">
+            © Copyright 2020 - Template developed by Chiara Papagni
         </p>
-    </div>
+    </footer>
 
-    <script src="src/js/scrollReveal.js"></script>
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Tilt.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"
+        integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
+        crossorigin="anonymous"></script>
+    <!-- JavaScript import from js folder -->
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/tilt.js"></script>
 </body>
 
 </html>
