@@ -6,6 +6,9 @@
   <img alt="GitHub" src="https://img.shields.io/static/v1?color=blue&label=Donate&message=PayPal&logo=paypal">
 </p>
 
+<p align="center">
+  <a href="https://chiarajs.github.io/ChiaraJS/"><img alt="Website" src="https://img.shields.io/website?down_color=critical&down_message=Down&label=Website&logo=github&logoColor=success&style=for-the-badge&up_color=success&up_message=Up&url=https%3A%2F%2Fchiarajs.github.io%2FChiaraJS%2F"></a>
+</p>
 <!--
   **ChiaraJS/ChiaraJS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
