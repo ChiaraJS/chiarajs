@@ -1,12 +1,22 @@
 /* ScrollReveal.js */
 window.sr = ScrollReveal();
-
 sr.reveal('.reveal-title', {
-    origin: 'top',
-    duration: 5000,
+    origin: 'left',
+    duration: 3000,
     distance: '200px',
-    scale: 0.5
+    easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+    
 });
+
+ScrollReveal().reveal('.reveal-row-text', {
+    origin: window.innerWidth > 768 ? 'left' : 'bottom',
+    duration: 1000,
+    delay: 500,
+    distance: '30px',
+    easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    desktop: true,
+    mobile: true    
+})
 
 /* OTHER PARAMS
 const reveal = {
@@ -18,6 +28,7 @@ const reveal = {
     opacity: 0,                                 // Starting opacity value, before transitioning to the computed opacity.
     scale: 0.9,                                 // Starting scale value, will transition from this value to 1
     easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',   // Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
+    desktop: true,                              // true/false to control reveal animations on desktop.
     mobile: true,                               // true/false to control reveal animations on mobile.
     reset: false,                               // true:  reveals occur every time elements become visible
                                                 // false: reveals occur once as elements become visible
