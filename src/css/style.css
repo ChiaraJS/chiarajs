@@ -1,6 +1,9 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato.ttf') format('truetype');
+}
 
 html, body {
     width: 100%;
@@ -66,6 +69,10 @@ p {
     align-items: center;
 }
 
+.img-fluid{
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
 /* Buttons */
 .button {
 	position: relative;
@@ -119,4 +126,100 @@ p {
 .btn-effect:active:after {
 	height: 400%;
 	opacity: 1;
+}
+
+/* Contact */
+.contact    {
+    margin-top: 50px;
+    text-align: center;
+}
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    text-decoration: none;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.cta:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    background: rgba(255, 181, 43, 0.5);
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.cta span {
+    position: relative;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #222;
+}
+.cta span:hover {
+    color: #fff;
+}
+.cta:hover:before {
+    width: 100%;
+    background: #ffb52b;
+}
+.cta:hover,
+.cta:active {
+    text-decoration: none;
+} 
+.cta:active {
+    transform: scale(0.96);
+}
+
+/* Footer */
+.footer {
+    padding-top: 20px;
+    padding-bottom: 25px;
+    overflow: auto;
+    background: #222;
+    text-align: center;
+}
+
+ion-icon {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+    color: #f4f4f4;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-property: transform;
+    transition-duration: 0.3s;    
+}
+ion-icon:hover, ion-icon:focus, ion-icon:active {
+    color: #fff;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.social a {
+    padding: 15px;
+}
+
+hr {
+    width: 28%;
+    height: 2px;
+    background-color: #444;
+}
+.copyright {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 0.9em;
+    color: #777;   
 }
