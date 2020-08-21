@@ -1,0 +1,23 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "A minimal and responsive portfolio",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ChiaraJS/ChiaraJS"
+    },
+    "keywords": [],
+    "author": "Chiara Papagni",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ChiaraJS/ChiaraJS/issues"
+    },
+    "homepage": "https://github.com/ChiaraJS/ChiaraJS#readme",
+    "dependencies": {
+        "bootstrap": "4.5.2",
+        "ionicons": "5.1.2",
+        "jquery": "3.5.1",
+        "scrollreveal": "4.0.7",
+        "tilt.js": "^1.2.1"
+    }
+}
